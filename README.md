@@ -1,6 +1,12 @@
 <h1>CLOTHING MENU FOR GTA5 FIVEM ROLEPLAY SERVER | ESX FRAMEWORK</h1>
 <p>Required minumum <span style="color: #339966;">$10</span> of patreon membership. <a href="https://patreon.com/menanak47" target="_blank">Get your membership</a> (if you don't have already)</p>
 <p><strong>Video Showcase:</strong> <a href="https://youtu.be/DMsrgJg92PE" target="_blank">YouTube</a></p>
+<p><strong>Supported ESX Versions:</strong></p>
+<ul>
+<li>ESX 1.2</li>
+<li>ESX Final</li>
+<li>ESX Legacy</li>
+</ul>
 <p><strong>Features: </strong></p>
 <ol>
 <li>Character creation menu</li>
