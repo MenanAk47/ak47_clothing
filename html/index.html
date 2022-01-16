@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ak47 Clothing</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="change-camera-buttons">
+        </div>
+        <div class="clothing-menu-container">
+            <div class="clothing-menu-header">
+            </div>
+            <div class="clothing-menu-header-cameras">
+                <div class="clothing-menu-header-camera-btn" data-value="0"><i class="fas fa-child"></i></i></div>
+                <div class="clothing-menu-header-camera-btn" data-value="1"><i class="fas fa-user-alt"></i></i></div>
+                <div class="clothing-menu-header-camera-btn" data-value="2"><i class="fas fa-tshirt"></i></div>
+                <div class="clothing-menu-header-camera-btn" data-value="3"><i class="fa fa-socks"></i></div>
+            </div>
+
+            <div class="clothing-menu-character-container">
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>sex</p>
+                    </div>
+                    <div class="clothing-menu-option-item-single" data-type="sex">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header" hidden>
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>age</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="age_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="age_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>Parents</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="mom">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="mom_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="dad">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="dad_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="face_md_weight">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="skin_md_weight">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>hair</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_color_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_color_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>beard</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>Eye</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eye_color">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eye_squint">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>eyebrows</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_5">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_6">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>Nose</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="nose_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="nose_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="nose_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="nose_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="nose_5">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="nose_6">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>Cheeks & lips</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="cheeks_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="cheeks_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="cheeks_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lip_thickness">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>jaw</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="jaw_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="jaw_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>chin</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chin_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chin_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chin_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chin_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>neck</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="neck_thickness">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>makeup</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>lipstick</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>blemishes</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blemishes_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blemishes_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>blush</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blush_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blush_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blush_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>complexion</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="complexion_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="complexion_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>sun</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="sun_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="sun_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>moles</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="moles_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="moles_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>Body</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chest_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chest_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chest_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bodyb_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bodyb_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bodyb_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bodyb_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clothing-menu-barber-container">
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>hair</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_color_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="hair_color_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>beard</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="beard_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>eyebrows</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="eyebrows_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>makeup</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="makeup_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>lipstick</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="lipstick_4">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>blush</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blush_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blush_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="blush_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>Body</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chest_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chest_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chest_3">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clothing-menu-clothing-container">
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>tshirt</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="tshirt_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="tshirt_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>torso</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="torso_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="torso_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>arms</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="arms">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="arms_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>vest</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bproof_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bproof_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>decals</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="decals_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="decals_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>pants</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="pants_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="pants_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>shoes</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="shoes_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="shoes_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clothing-menu-accessoires-container">
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>Hat</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="helmet_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="helmet_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>glasses</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="glasses_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="glasses_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>ears</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="ears_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="ears_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>mask</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="mask_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="mask_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>chain</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chain_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="chain_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>watche & bracelet</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="watches_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="watches_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bracelets_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bracelets_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="clothing-menu-option">
+                    <div class="clothing-menu-option-header">
+                        <p>bags</p>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bags_1">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Type</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="clothing-menu-option-item" data-type="bags_2">
+                        <div class="clothing-menu-option-item-header" data-headertype="item-header">
+                            <p>Skin color</p>
+                        </div>
+                        <div class="clothing-menu-option-item-left" data-type="item"><i class="fa fa-angle-left"></i></div>
+                        <input type="number" class="item-number" data-type="item" value="0">
+                        <div class="clothing-menu-option-item-right" data-type="item"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clothing-menu-myOutfits-container">
+
+            </div>
+
+            <div class="clothing-menu-option-buttons">
+                <div class="clothing-menu-option-button" id="save-menu">
+                    <p>Confirm</p>
+                </div>
+                <div class="clothing-menu-option-button" id="cancel-menu">
+                    <p>Cancel</p>
+                </div>
+                <div class="clothing-menu-option-button" id="save-outfit">
+                    <p>Save Outfit</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clothing-menu-save-outfit-name">
+            <div class="clothing-menu-save-outfit-name-header">
+                <p>Name Outfit</p>
+            </div>
+
+            <input type="text" id="outfit-name" placeholder="Outfit Name">
+
+            <div class="clothing-menu-save-outfit-name-buttons">
+                <div class="clothing-menu-save-outfit-name-button" id="save-outfit-save">
+                    <p>Confirm</p>
+                </div>
+                <div class="clothing-menu-save-outfit-name-button" id="cancel-outfit-save">
+                    <p>Cancel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
