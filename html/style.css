@@ -213,6 +213,18 @@
     overflow-y: scroll !important;
 }
 
+.clothing-menu-barber-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0.3vh;
+    right: 0;
+    top: 9vh;
+    height: 86vh;
+    width: 92%;
+    overflow-y: scroll !important;
+}
+
 .clothing-menu-accessoires-container {
     display: none;
     position: absolute;
