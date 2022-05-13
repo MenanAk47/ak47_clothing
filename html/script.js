@@ -1,1 +1,360 @@
-var _0x1b7bab=_0x30fd;(function(_0x47ef9e,_0x244a7a){var _0x8d6e4c=_0x30fd,_0x39b9bf=_0x47ef9e();while(!![]){try{var _0x9ee879=parseInt(_0x8d6e4c(0x109))/0x1*(parseInt(_0x8d6e4c(0x175))/0x2)+-parseInt(_0x8d6e4c(0x176))/0x3+parseInt(_0x8d6e4c(0x10f))/0x4*(-parseInt(_0x8d6e4c(0x164))/0x5)+parseInt(_0x8d6e4c(0x10a))/0x6*(parseInt(_0x8d6e4c(0x160))/0x7)+-parseInt(_0x8d6e4c(0x141))/0x8+-parseInt(_0x8d6e4c(0x126))/0x9*(-parseInt(_0x8d6e4c(0x172))/0xa)+parseInt(_0x8d6e4c(0x11d))/0xb;if(_0x9ee879===_0x244a7a)break;else _0x39b9bf['push'](_0x39b9bf['shift']());}catch(_0xa1e169){_0x39b9bf['push'](_0x39b9bf['shift']());}}}(_0x2b98,0x48ab6),Ak47Clothing={});var selectedTab=_0x1b7bab(0x112),lastCategory=_0x1b7bab(0x10e),selectedCam=null,canChange=!![],changingCat=null,clothingCategorys=[];$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x167),function(_0x4db0dc){var _0x5aea10=_0x1b7bab,_0x3aa2f4=$(this)[_0x5aea10(0x113)](_0x5aea10(0x130));$(selectedTab)['removeClass'](_0x5aea10(0x11e)),$(this)[_0x5aea10(0x158)](_0x5aea10(0x11e)),$(_0x5aea10(0x133)+lastCategory+_0x5aea10(0x15a))[_0x5aea10(0x13b)]({'display':'none'}),lastCategory=_0x3aa2f4,selectedTab=this,$(_0x5aea10(0x133)+_0x3aa2f4+'-container')['css']({'display':_0x5aea10(0x13e)});}),$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x132),function(_0x9a7d7b){var _0x2a5d97=_0x1b7bab;_0x9a7d7b[_0x2a5d97(0x159)]();var _0x78025b=$(this)[_0x2a5d97(0x11b)]()['data'](_0x2a5d97(0x154)),_0x4648e6=$(this)[_0x2a5d97(0x113)]('type'),_0x1afe70=$(this)['parent']()[_0x2a5d97(0x128)](_0x2a5d97(0x12e)),_0x2cc691=$(_0x1afe70)['val'](),_0x4a4030=parseFloat(_0x2cc691)+0x1,_0x17a308=$(this)[_0x2a5d97(0x11b)]()[_0x2a5d97(0x128)](_0x2a5d97(0x153))[_0x2a5d97(0x113)](_0x2a5d97(0x14b));_0x4a4030<=parseInt(_0x17a308)&&($(_0x1afe70)[_0x2a5d97(0x15b)](_0x4a4030),$['post']('https://ak47_clothing/updateSkin',JSON['stringify']({'clothingType':_0x78025b,'articleNumber':_0x4a4030,'type':_0x4648e6})));}),$(document)['on'](_0x1b7bab(0xff),'.clothing-menu-option-item-left',function(_0x4036da){var _0x314e92=_0x1b7bab;_0x4036da[_0x314e92(0x159)]();var _0x45517b=$(this)[_0x314e92(0x11b)]()[_0x314e92(0x113)]('type'),_0x47fb19=$(this)['data'](_0x314e92(0x154)),_0x249ae9=$(this)['parent']()[_0x314e92(0x128)](_0x314e92(0x12e)),_0x2e955e=$(_0x249ae9)['val'](),_0x3fe5e7=parseFloat(_0x2e955e)-0x1,_0x125f02=$(this)['parent']()[_0x314e92(0x128)](_0x314e92(0x153))[_0x314e92(0x113)](_0x314e92(0x142));_0x3fe5e7>=parseInt(_0x125f02)&&($(_0x249ae9)[_0x314e92(0x15b)](_0x3fe5e7),$[_0x314e92(0x107)](_0x314e92(0x144),JSON[_0x314e92(0x120)]({'clothingType':_0x45517b,'articleNumber':_0x3fe5e7,'type':_0x47fb19})));});function ChangeUp(){var _0x56878=_0x1b7bab,_0xb2fe5e=$(changingCat)[_0x56878(0x11b)]()['parent']()[_0x56878(0x113)](_0x56878(0x154)),_0x3e408a=$(changingCat)['data'](_0x56878(0x154)),_0x377c50=parseFloat($(changingCat)[_0x56878(0x15b)]());_0xb2fe5e=='accessory'&&_0x377c50+0x1==0xd&&$(changingCat)[_0x56878(0x15b)](0xe-0x1);}function _0x30fd(_0x1f818b,_0x67cf7f){var _0x2b98e4=_0x2b98();return _0x30fd=function(_0x30fd6a,_0x3007ba){_0x30fd6a=_0x30fd6a-0xfe;var _0x294a85=_0x2b98e4[_0x30fd6a];return _0x294a85;},_0x30fd(_0x1f818b,_0x67cf7f);}function ChangeDown(){var _0x507a78=_0x1b7bab,_0x2eaafc=$(changingCat)[_0x507a78(0x11b)]()[_0x507a78(0x11b)]()[_0x507a78(0x113)](_0x507a78(0x154)),_0x3867b4=$(changingCat)[_0x507a78(0x113)](_0x507a78(0x154)),_0x4c6197=parseFloat($(changingCat)['val']());_0x2eaafc=='accessory'&&_0x4c6197-0x1==0xd&&$(changingCat)[_0x507a78(0x15b)](0xc+0x1);}function _0x2b98(){var _0x11221b=['display','.characterTab','data','close','.clothing-menu-container','none','fadeIn','ReloadOutfits','value','.clothing-menu-outfit-option-button','parent','https://ak47_clothing/rotateCam','7269108KfJCFZ','selected','append','stringify','https://ak47_clothing/saveOutfit','<p>','updateMax','SetCurrentValues','#cancel-menu','45GQKOdq','.clothing-menu-header-camera-btn','find','length','</p></div>','removeClass','.clothing-menu-barber-container','label','input','maxValues','category','menus','.clothing-menu-option-item-right','.clothing-menu-','[data-myOutfit=\x27','<div\x20class=\x22clothing-menu-header-btn\x20','#faceoption','action','rotation','#save-menu','<div\x20class=\x22clothing-menu-option\x22\x20data-myOutfit=\x22','css','outfitData','#save-outfit-save','block','addEventListener','[data-type=\x22','2731416xtBdDr','minItem','https://ak47_clothing/removeOutfit','https://ak47_clothing/updateSkin','Tab\x22\x20data-category=\x22','myOutfits','https://ak47_clothing/rotateRight','Clothing','</p>','html','maxItem','Tab','ToggleChange','max','.clothing-menu-myOutfit-option-button-remove','outfits','#outfit-name','allow','[data-headertype=\x22item-header\x22]','type','currentClothing','.clothing-menu-header','https://ak47_clothing/resetOutfit','addClass','preventDefault','-container','val','.clothing-menu-character-container','width','min','.change-camera-button','863135FEuhGI','reloadMyOutfits','change','open','1124065YhGAOj','https://ak47_clothing/close','Open','.clothing-menu-header-btn','ready','</p></div><div\x20class=\x22clothing-menu-myOutfit-option-button\x22><p>Select</p></div><div\x20class=\x22clothing-menu-myOutfit-option-button-remove\x22><p>Delete</p></div></div>','menu','.clothing-menu-save-outfit-name','.change-camera-buttons','each','.clothing-menu-accessoires-container','Close','https://ak47_clothing/updateSkinOnInput','https://ak47_clothing/setupCam','796080kgFokB','myOutfitData','fadeOut','1050SWDBXj','986337chThBE','input[data-type=\x22item\x22]','click','SetMaxValues','https://ak47_clothing/selectOutfit','.clothing-menu-clothing-container','#cancel-outfit-save','.clothing-menu-myOutfits-container','keyCode','name','post','https://ak47_clothing/rotateLeft','20dqKWBW','6rWphaw','-25vw','selected-cam','animate','character','4ePEtav','.item-number'];_0x2b98=function(){return _0x11221b;};return _0x2b98();}$(document)['on'](_0x1b7bab(0x162),_0x1b7bab(0x110),function(){var _0x41d1d2=_0x1b7bab,_0x57246d=$(this)[_0x41d1d2(0x11b)]()[_0x41d1d2(0x113)](_0x41d1d2(0x154)),_0x5bbe5c=$(this)[_0x41d1d2(0x113)](_0x41d1d2(0x154)),_0x212084=$(this)[_0x41d1d2(0x15b)]();changingCat=this,$[_0x41d1d2(0x107)](_0x41d1d2(0x170),JSON[_0x41d1d2(0x120)]({'clothingType':_0x57246d,'articleNumber':parseFloat(_0x212084),'type':_0x5bbe5c}));}),$(document)['on']('click',_0x1b7bab(0x127),function(_0x3c87ce){var _0x4e8567=_0x1b7bab;_0x3c87ce[_0x4e8567(0x159)]();var _0x2983fa=parseFloat($(this)[_0x4e8567(0x113)](_0x4e8567(0x119)));selectedCam==null?($(this)[_0x4e8567(0x158)](_0x4e8567(0x10c)),$[_0x4e8567(0x107)]('https://ak47_clothing/setupCam',JSON[_0x4e8567(0x120)]({'value':_0x2983fa})),selectedCam=this):selectedCam==this?($(selectedCam)['removeClass'](_0x4e8567(0x10c)),$[_0x4e8567(0x107)](_0x4e8567(0x171),JSON[_0x4e8567(0x120)]({'value':0x0})),selectedCam=null):($(selectedCam)[_0x4e8567(0x12b)](_0x4e8567(0x10c)),$(this)[_0x4e8567(0x158)]('selected-cam'),$[_0x4e8567(0x107)](_0x4e8567(0x171),JSON[_0x4e8567(0x120)]({'value':_0x2983fa})),selectedCam=this);}),$(document)['on']('keydown',function(){var _0x5154fa=_0x1b7bab;switch(event[_0x5154fa(0x105)]){case 0x44:$['post'](_0x5154fa(0x147));break;case 0x41:$[_0x5154fa(0x107)](_0x5154fa(0x108));break;case 0x26:ChangeUp();break;case 0x28:ChangeDown();break;}}),Ak47Clothing['ToggleChange']=function(_0x5550f8){canChange=_0x5550f8;},$(document)[_0x1b7bab(0x168)](function(){var _0x39ca8a=_0x1b7bab;window[_0x39ca8a(0x13f)]('message',function(_0xfedbfb){var _0x14150a=_0x39ca8a;switch(_0xfedbfb[_0x14150a(0x113)][_0x14150a(0x137)]){case _0x14150a(0x163):Ak47Clothing[_0x14150a(0x166)](_0xfedbfb[_0x14150a(0x113)]);break;case _0x14150a(0x114):Ak47Clothing[_0x14150a(0x16f)]();break;case _0x14150a(0x123):Ak47Clothing[_0x14150a(0x100)](_0xfedbfb['data'][_0x14150a(0x12f)]);break;case _0x14150a(0x161):Ak47Clothing[_0x14150a(0x118)](_0xfedbfb[_0x14150a(0x113)][_0x14150a(0x150)]);break;case'toggleChange':Ak47Clothing[_0x14150a(0x14d)](_0xfedbfb[_0x14150a(0x113)][_0x14150a(0x152)]);break;}});}),$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x139),function(_0x277164){var _0x5c1704=_0x1b7bab;_0x277164[_0x5c1704(0x159)](),Ak47Clothing[_0x5c1704(0x16f)](),$[_0x5c1704(0x107)]('https://ak47_clothing/saveClothing');}),$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x125),function(_0x395dda){var _0x10c87c=_0x1b7bab;_0x395dda[_0x10c87c(0x159)](),Ak47Clothing[_0x10c87c(0x16f)](),$[_0x10c87c(0x107)](_0x10c87c(0x157));}),Ak47Clothing[_0x1b7bab(0x100)]=function(_0x168847){var _0x261262=_0x1b7bab;$[_0x261262(0x16d)](_0x168847,function(_0x5e4d59,_0x49b6ad){var _0x333400=_0x261262,_0x15e02e=$(_0x333400(0x15c))[_0x333400(0x128)](_0x333400(0x140)+_0x5e4d59+'\x22]'),_0x3cf58c=$(_0x15e02e)['find'](_0x333400(0x153));$(_0x3cf58c)[_0x333400(0x113)]('maxItem',_0x49b6ad['max']),$(_0x3cf58c)[_0x333400(0x113)](_0x333400(0x142),_0x49b6ad[_0x333400(0x15e)]),$(_0x3cf58c)['html'](_0x333400(0x122)+_0x49b6ad[_0x333400(0x12d)]+':\x20'+_0x49b6ad[_0x333400(0x14e)]+_0x333400(0x149));var _0x15e02e=$(_0x333400(0x102))[_0x333400(0x128)](_0x333400(0x140)+_0x5e4d59+'\x22]'),_0x3cf58c=$(_0x15e02e)[_0x333400(0x128)](_0x333400(0x153));$(_0x3cf58c)[_0x333400(0x113)]('maxItem',_0x49b6ad[_0x333400(0x14e)]),$(_0x3cf58c)[_0x333400(0x113)](_0x333400(0x142),_0x49b6ad[_0x333400(0x15e)]),$(_0x3cf58c)[_0x333400(0x14a)]('<p>'+_0x49b6ad['label']+':\x20'+_0x49b6ad[_0x333400(0x14e)]+_0x333400(0x149));var _0x15e02e=$(_0x333400(0x16e))[_0x333400(0x128)](_0x333400(0x140)+_0x5e4d59+'\x22]'),_0x3cf58c=$(_0x15e02e)[_0x333400(0x128)](_0x333400(0x153));$(_0x3cf58c)[_0x333400(0x113)](_0x333400(0x14b),_0x49b6ad['max']),$(_0x3cf58c)[_0x333400(0x113)](_0x333400(0x142),_0x49b6ad[_0x333400(0x15e)]),$(_0x3cf58c)[_0x333400(0x14a)]('<p>'+_0x49b6ad[_0x333400(0x12d)]+':\x20'+_0x49b6ad[_0x333400(0x14e)]+_0x333400(0x149));var _0x15e02e=$(_0x333400(0x12c))[_0x333400(0x128)]('[data-type=\x22'+_0x5e4d59+'\x22]'),_0x3cf58c=$(_0x15e02e)['find'](_0x333400(0x153));$(_0x3cf58c)[_0x333400(0x113)](_0x333400(0x14b),_0x49b6ad[_0x333400(0x14e)]),$(_0x3cf58c)[_0x333400(0x113)](_0x333400(0x142),_0x49b6ad[_0x333400(0x15e)]),$(_0x3cf58c)['html'](_0x333400(0x122)+_0x49b6ad['label']+':\x20'+_0x49b6ad[_0x333400(0x14e)]+_0x333400(0x149));});},Ak47Clothing[_0x1b7bab(0x124)]=function(_0x215c22){var _0xe35fec=_0x1b7bab;$[_0xe35fec(0x16d)](_0x215c22,function(_0x1ced39,_0x3d9cda){var _0x5242eb=_0xe35fec,_0x19038b=$('.clothing-menu-character-container')[_0x5242eb(0x128)](_0x5242eb(0x140)+_0x3d9cda[_0x5242eb(0x106)]+'\x22]'),_0x537669=$(_0x19038b)['find'](_0x5242eb(0xfe));$(_0x537669)[_0x5242eb(0x15b)](_0x3d9cda[_0x5242eb(0x119)]);var _0x19038b=$('.clothing-menu-clothing-container')[_0x5242eb(0x128)](_0x5242eb(0x140)+_0x3d9cda[_0x5242eb(0x106)]+'\x22]'),_0x537669=$(_0x19038b)['find'](_0x5242eb(0xfe));$(_0x537669)[_0x5242eb(0x15b)](_0x3d9cda[_0x5242eb(0x119)]);var _0x19038b=$(_0x5242eb(0x16e))[_0x5242eb(0x128)]('[data-type=\x22'+_0x3d9cda[_0x5242eb(0x106)]+'\x22]'),_0x537669=$(_0x19038b)[_0x5242eb(0x128)](_0x5242eb(0xfe));$(_0x537669)[_0x5242eb(0x15b)](_0x3d9cda[_0x5242eb(0x119)]);var _0x19038b=$(_0x5242eb(0x12c))[_0x5242eb(0x128)](_0x5242eb(0x140)+_0x3d9cda['name']+'\x22]'),_0x537669=$(_0x19038b)[_0x5242eb(0x128)](_0x5242eb(0xfe));$(_0x537669)[_0x5242eb(0x15b)](_0x3d9cda[_0x5242eb(0x119)]);});},Ak47Clothing[_0x1b7bab(0x166)]=function(_0x4cce8b){var _0x3f4510=_0x1b7bab;clothingCategorys=_0x4cce8b[_0x3f4510(0x155)],$('.change-camera-buttons')[_0x3f4510(0x117)](0x96),$(_0x3f4510(0x104))['css']('display','none'),$(_0x3f4510(0x15c))[_0x3f4510(0x13b)](_0x3f4510(0x111),_0x3f4510(0x116)),$(_0x3f4510(0x12c))[_0x3f4510(0x13b)]('display',_0x3f4510(0x116)),$(_0x3f4510(0x102))[_0x3f4510(0x13b)]('display',_0x3f4510(0x116)),$(_0x3f4510(0x16e))[_0x3f4510(0x13b)](_0x3f4510(0x111),_0x3f4510(0x116)),$(_0x3f4510(0x12c))[_0x3f4510(0x13b)](_0x3f4510(0x111),_0x3f4510(0x116)),$('.clothing-menu-container')[_0x3f4510(0x13b)]({'display':_0x3f4510(0x13e)})[_0x3f4510(0x10d)]({'right':0x0},0xc8),Ak47Clothing['SetMaxValues'](_0x4cce8b[_0x3f4510(0x12f)]),$('.clothing-menu-header')['html'](''),Ak47Clothing['SetCurrentValues'](_0x4cce8b['currentClothing']),$(_0x3f4510(0x104))[_0x3f4510(0x14a)](''),$[_0x3f4510(0x16d)](_0x4cce8b['menus'],function(_0x13adcc,_0x1a68d3){var _0x77012e=_0x3f4510;_0x1a68d3[_0x77012e(0x11e)]?($(_0x77012e(0x156))['append'](_0x77012e(0x135)+_0x1a68d3[_0x77012e(0x16a)]+'Tab\x20selected\x22\x20data-category=\x22'+_0x1a68d3['menu']+'\x22><p>'+_0x1a68d3['label']+_0x77012e(0x12a)),$(_0x77012e(0x133)+_0x1a68d3[_0x77012e(0x16a)]+_0x77012e(0x15a))[_0x77012e(0x13b)]({'display':_0x77012e(0x13e)}),_0x1a68d3[_0x77012e(0x12d)]==_0x77012e(0x148)?$('#faceoption')['css'](_0x77012e(0x111),_0x77012e(0x116)):$(_0x77012e(0x136))['css'](_0x77012e(0x111),_0x77012e(0x13e)),selectedTab='.'+_0x1a68d3[_0x77012e(0x16a)]+_0x77012e(0x14c),lastCategory=_0x1a68d3['menu']):$(_0x77012e(0x156))[_0x77012e(0x11f)]('<div\x20class=\x22clothing-menu-header-btn\x20'+_0x1a68d3['menu']+_0x77012e(0x145)+_0x1a68d3[_0x77012e(0x16a)]+'\x22><p>'+_0x1a68d3['label']+_0x77012e(0x12a)),_0x1a68d3[_0x77012e(0x16a)]==_0x77012e(0x146)&&$[_0x77012e(0x16d)](_0x1a68d3['outfits'],function(_0x143d92,_0x444857){var _0x2887fd=_0x77012e,_0x530d8c='<div\x20class=\x22clothing-menu-option\x22\x20data-myOutfit=\x22'+(_0x143d92+0x1)+'\x22>\x20<div\x20class=\x22clothing-menu-option-header\x22><p>'+_0x444857+_0x2887fd(0x169);$(_0x2887fd(0x104))['append'](_0x530d8c),$(_0x2887fd(0x134)+(_0x143d92+0x1)+'\x27]')['data'](_0x2887fd(0x173),_0x143d92+0x1);});});var _0x5efaaa=0x64/_0x4cce8b[_0x3f4510(0x131)][_0x3f4510(0x129)];$(_0x3f4510(0x167))[_0x3f4510(0x13b)](_0x3f4510(0x15d),_0x5efaaa+'%');},Ak47Clothing[_0x1b7bab(0x118)]=function(_0x36c349){var _0x307ed1=_0x1b7bab;$(_0x307ed1(0x104))[_0x307ed1(0x14a)](''),$[_0x307ed1(0x16d)](_0x36c349,function(_0xb1937a,_0x5e9399){var _0x52d26b=_0x307ed1,_0x1cc00c=_0x52d26b(0x13a)+(_0xb1937a+0x1)+'\x22>\x20<div\x20class=\x22clothing-menu-option-header\x22><p>'+_0x5e9399+'</p></div><div\x20class=\x22clothing-menu-myOutfit-option-button\x22><p>Select</p></div><div\x20class=\x22clothing-menu-myOutfit-option-button-remove\x22><p>Delete</p></div></div>';$(_0x52d26b(0x104))[_0x52d26b(0x11f)](_0x1cc00c),$(_0x52d26b(0x134)+(_0xb1937a+0x1)+'\x27]')[_0x52d26b(0x113)]('myOutfitData',_0xb1937a+0x1);});},$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x11a),function(_0x2aa8ae){var _0x28f052=_0x1b7bab;_0x2aa8ae['preventDefault']();var _0x1b5db6=$(this)[_0x28f052(0x11b)]()[_0x28f052(0x113)]('outfitData');$[_0x28f052(0x107)]('https://ak47_clothing/selectOutfit',JSON[_0x28f052(0x120)]({'outfitData':_0x1b5db6[_0x28f052(0x13c)],'outfitName':_0x1b5db6['outfitLabel']}));}),$(document)['on'](_0x1b7bab(0xff),'.clothing-menu-myOutfit-option-button',function(_0x2b90e8){var _0x590ad8=_0x1b7bab;_0x2b90e8['preventDefault']();var _0x516fc9=$(this)['parent']()['data'](_0x590ad8(0x173));$[_0x590ad8(0x107)](_0x590ad8(0x101),JSON[_0x590ad8(0x120)]({'id':_0x516fc9}));}),$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x14f),function(_0x16b1ea){var _0x2ec10a=_0x1b7bab;_0x16b1ea[_0x2ec10a(0x159)]();var _0x363037=$(this)[_0x2ec10a(0x11b)]()[_0x2ec10a(0x113)](_0x2ec10a(0x173));$[_0x2ec10a(0x107)](_0x2ec10a(0x143),JSON['stringify']({'id':_0x363037}));}),Ak47Clothing['Close']=function(){var _0xcbf18d=_0x1b7bab;$['post'](_0xcbf18d(0x165)),$(_0xcbf18d(0x16c))[_0xcbf18d(0x174)](0x96),$(_0xcbf18d(0x104))[_0xcbf18d(0x13b)](_0xcbf18d(0x111),_0xcbf18d(0x116)),$(_0xcbf18d(0x15c))[_0xcbf18d(0x13b)](_0xcbf18d(0x111),_0xcbf18d(0x116)),$(_0xcbf18d(0x102))['css']('display',_0xcbf18d(0x116)),$(_0xcbf18d(0x16e))[_0xcbf18d(0x13b)](_0xcbf18d(0x111),_0xcbf18d(0x116)),$('.clothing-menu-barber-container')[_0xcbf18d(0x13b)](_0xcbf18d(0x111),_0xcbf18d(0x116)),$(_0xcbf18d(0x156))[_0xcbf18d(0x14a)](''),$(selectedCam)['removeClass']('selected-cam'),$(selectedTab)['removeClass'](_0xcbf18d(0x11e)),selectedCam=null,selectedTab=null,lastCategory=null,$('.clothing-menu-container')[_0xcbf18d(0x13b)]({'display':'block'})[_0xcbf18d(0x10d)]({'right':'-25vw'},0xc8,function(){var _0x93d216=_0xcbf18d;$('.clothing-menu-container')[_0x93d216(0x13b)]({'display':_0x93d216(0x116)});});},$(document)['on'](_0x1b7bab(0xff),'#save-outfit',function(_0x3aae4c){var _0x5b768a=_0x1b7bab;_0x3aae4c[_0x5b768a(0x159)](),$(_0x5b768a(0x115))[_0x5b768a(0x13b)]({'display':_0x5b768a(0x13e)})[_0x5b768a(0x10d)]({'right':_0x5b768a(0x10b)},0xc8,function(){var _0x42ae5f=_0x5b768a;$(_0x42ae5f(0x115))[_0x42ae5f(0x13b)]({'display':_0x42ae5f(0x116)});}),$(_0x5b768a(0x16b))['fadeIn'](0x96);}),$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x13d),function(_0x26dfa4){var _0xc08cd5=_0x1b7bab;_0x26dfa4[_0xc08cd5(0x159)](),$('.clothing-menu-container')[_0xc08cd5(0x13b)]({'display':'block'})[_0xc08cd5(0x10d)]({'right':0x0},0xc8),$('.clothing-menu-save-outfit-name')['fadeOut'](0x96),$[_0xc08cd5(0x107)](_0xc08cd5(0x121),JSON['stringify']({'outfitName':$(_0xc08cd5(0x151))['val']()}));}),$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x103),function(_0x3cd55f){var _0x286c1e=_0x1b7bab;_0x3cd55f[_0x286c1e(0x159)](),$(_0x286c1e(0x115))['css']({'display':'block'})[_0x286c1e(0x10d)]({'right':0x0},0xc8),$(_0x286c1e(0x16b))['fadeOut'](0x96);}),$(document)['on'](_0x1b7bab(0xff),_0x1b7bab(0x15f),function(_0x50960d){var _0x136f1e=_0x1b7bab;_0x50960d[_0x136f1e(0x159)]();var _0x31b274=$(this)[_0x136f1e(0x113)](_0x136f1e(0x138));$['post'](_0x136f1e(0x11c),JSON[_0x136f1e(0x120)]({'type':_0x31b274}));});
+Ak47Clothing = {}
+var selectedTab = ".characterTab"
+var lastCategory = "character"
+var selectedCam = null;
+var canChange = true;
+var changingCat = null;
+var clothingCategorys = [];
+
+$(document).on('click', '.clothing-menu-header-btn', function (e) {
+    var category = $(this).data('category');
+    $(selectedTab).removeClass("selected");
+    $(this).addClass("selected");
+    $(".clothing-menu-" + lastCategory + "-container").css({
+        "display": "none"
+    });
+    lastCategory = category;
+    selectedTab = this;
+    $(".clothing-menu-" + category + "-container").css({
+        "display": "block"
+    });
+})
+
+$(document).on('click', '.clothing-menu-option-item-right', function (e) {
+    e.preventDefault();
+    var clothingCategory = $(this).parent().data('type');
+    var buttonType = $(this).data('type');
+    var inputElem = $(this).parent().find('input');
+    var inputVal = $(inputElem).val();
+    var newValue = parseFloat(inputVal) + 1;
+    var buttonMax = $(this).parent().find('[data-headertype="item-header"]').data('maxItem');
+    if (newValue <= parseInt(buttonMax)) {
+        $(inputElem).val(newValue);
+        $.post('https://ak47_clothing/updateSkin', JSON.stringify({
+            clothingType: clothingCategory,
+            articleNumber: newValue,
+            type: buttonType,
+        }));
+    }
+});
+
+$(document).on('click', '.clothing-menu-option-item-left', function (e) {
+    e.preventDefault();
+    var clothingCategory = $(this).parent().data('type');
+    var buttonType = $(this).data('type');
+    var inputElem = $(this).parent().find('input');
+    var inputVal = $(inputElem).val();
+    var newValue = parseFloat(inputVal) - 1;
+    var buttonMin = $(this).parent().find('[data-headertype="item-header"]').data('minItem');
+    if (newValue >= parseInt(buttonMin)) {
+        $(inputElem).val(newValue);
+        $.post('https://ak47_clothing/updateSkin', JSON.stringify({
+            clothingType: clothingCategory,
+            articleNumber: newValue,
+            type: buttonType,
+        }));
+    }
+});
+
+function ChangeUp() {
+    var clothingCategory = $(changingCat).parent().parent().data('type');
+    var buttonType = $(changingCat).data('type');
+    var inputVal = parseFloat($(changingCat).val());
+    if (clothingCategory == "accessory" && inputVal + 1 == 13) {
+        $(changingCat).val(14 - 1)
+    }
+}
+
+function ChangeDown() {
+    var clothingCategory = $(changingCat).parent().parent().data('type');
+    var buttonType = $(changingCat).data('type');
+    var inputVal = parseFloat($(changingCat).val());
+    if (clothingCategory == "accessory" && inputVal - 1 == 13) {
+        $(changingCat).val(12 + 1)
+    }
+}
+
+$(document).on('change', '.item-number', function () {
+    var clothingCategory = $(this).parent().data('type');
+    var buttonType = $(this).data('type');
+    var inputVal = $(this).val();
+    changingCat = this;
+
+    $.post('https://ak47_clothing/updateSkinOnInput', JSON.stringify({
+        clothingType: clothingCategory,
+        articleNumber: parseFloat(inputVal),
+        type: buttonType,
+    }));
+});
+
+$(document).on('click', '.clothing-menu-header-camera-btn', function (e) {
+    e.preventDefault();
+    var camValue = parseFloat($(this).data('value'));
+    if (selectedCam == null) {
+        $(this).addClass("selected-cam");
+        $.post('https://ak47_clothing/setupCam', JSON.stringify({
+            value: camValue
+        }));
+        selectedCam = this;
+    } else {
+        if (selectedCam == this) {
+            $(selectedCam).removeClass("selected-cam");
+            $.post('https://ak47_clothing/setupCam', JSON.stringify({
+                value: 0
+            }));
+            selectedCam = null;
+        } else {
+            $(selectedCam).removeClass("selected-cam");
+            $(this).addClass("selected-cam");
+            $.post('https://ak47_clothing/setupCam', JSON.stringify({
+                value: camValue
+            }));
+            selectedCam = this;
+        }
+    }
+});
+
+$(document).on('keydown', function () {
+    switch (event.keyCode) {
+        case 68: // D
+            $.post('https://ak47_clothing/rotateRight');
+            break;
+        case 65: // A
+            $.post('https://ak47_clothing/rotateLeft');
+            break;
+        case 38: // UP
+            ChangeUp();
+            break;
+        case 40: // DOWN
+            ChangeDown();
+            break;
+    }
+});
+
+Ak47Clothing.ToggleChange = function (bool) {
+    canChange = bool;
+}
+
+$(document).ready(function () {
+    window.addEventListener('message', function (event) {
+        switch (event.data.action) {
+            case "open":
+                Ak47Clothing.Open(event.data);
+                break;
+            case "close":
+                Ak47Clothing.Close();
+                break;
+            case "updateMax":
+                Ak47Clothing.SetMaxValues(event.data.maxValues);
+                break;
+            case "reloadMyOutfits":
+                Ak47Clothing.ReloadOutfits(event.data.outfits);
+                break;
+            case "toggleChange":
+                Ak47Clothing.ToggleChange(event.data.allow);
+                break;
+        }
+    })
+});
+
+$(document).on('click', "#save-menu", function (e) {
+    e.preventDefault();
+    Ak47Clothing.Close();
+    $.post('https://ak47_clothing/saveClothing');
+});
+
+$(document).on('click', "#cancel-menu", function (e) {
+    e.preventDefault();
+    Ak47Clothing.Close();
+    $.post('https://ak47_clothing/resetOutfit');
+});
+
+Ak47Clothing.SetMaxValues = function (maxValues) {
+    $.each(maxValues, function (i, cat) {
+        var containers = $(".clothing-menu-character-container").find('[data-type="' + i + '"]');
+        var itemMax = $(containers).find('[data-headertype="item-header"]');
+        $(itemMax).data('maxItem', cat.max)
+        $(itemMax).data('minItem', cat.min)
+        $(itemMax).html("<p>" + cat.label + ": " + cat.max + "</p>")
+
+        var containers = $(".clothing-menu-clothing-container").find('[data-type="' + i + '"]');
+        var itemMax = $(containers).find('[data-headertype="item-header"]');
+        $(itemMax).data('maxItem', cat.max)
+        $(itemMax).data('minItem', cat.min)
+        $(itemMax).html("<p>" + cat.label + ": " + cat.max + "</p>")
+
+        var containers = $(".clothing-menu-accessoires-container").find('[data-type="' + i + '"]');
+        var itemMax = $(containers).find('[data-headertype="item-header"]');
+        $(itemMax).data('maxItem', cat.max)
+        $(itemMax).data('minItem', cat.min)
+        $(itemMax).html("<p>" + cat.label + ": " + cat.max + "</p>")
+
+        var containers = $(".clothing-menu-barber-container").find('[data-type="' + i + '"]');
+        var itemMax = $(containers).find('[data-headertype="item-header"]');
+        $(itemMax).data('maxItem', cat.max)
+        $(itemMax).data('minItem', cat.min)
+        $(itemMax).html("<p>" + cat.label + ": " + cat.max + "</p>")
+    })
+}
+
+Ak47Clothing.SetCurrentValues = function (clothingValues) {
+    $.each(clothingValues, function (i, item) {
+        var itemCats = $(".clothing-menu-character-container").find('[data-type="' + item.name + '"]');
+        var input = $(itemCats).find('input[data-type="item"]');
+        $(input).val(item.value);
+
+        var itemCats = $(".clothing-menu-clothing-container").find('[data-type="' + item.name + '"]');
+        var input = $(itemCats).find('input[data-type="item"]');
+        $(input).val(item.value);
+
+        var itemCats = $(".clothing-menu-accessoires-container").find('[data-type="' + item.name + '"]');
+        var input = $(itemCats).find('input[data-type="item"]');
+        $(input).val(item.value);
+
+        var itemCats = $(".clothing-menu-barber-container").find('[data-type="' + item.name + '"]');
+        var input = $(itemCats).find('input[data-type="item"]');
+        $(input).val(item.value);
+    });
+}
+
+Ak47Clothing.Open = function (data) {
+    clothingCategorys = data.currentClothing;
+    $(".change-camera-buttons").fadeIn(150);
+    $(".clothing-menu-myOutfits-container").css("display", "none");
+    $(".clothing-menu-character-container").css("display", "none");
+    $(".clothing-menu-barber-container").css("display", "none");
+    $(".clothing-menu-clothing-container").css("display", "none");
+    $(".clothing-menu-accessoires-container").css("display", "none");
+    $(".clothing-menu-barber-container").css("display", "none");
+    $(".clothing-menu-container").css({
+        "display": "block"
+    }).animate({right: 0}, 200);
+    Ak47Clothing.SetMaxValues(data.maxValues);
+    $(".clothing-menu-header").html("");
+    Ak47Clothing.SetCurrentValues(data.currentClothing);
+    $(".clothing-menu-myOutfits-container").html("");
+    $.each(data.menus, function (i, menu) {
+        if (menu.selected) {
+            $(".clothing-menu-header").append('<div class="clothing-menu-header-btn ' + menu.menu + 'Tab selected" data-category="' + menu.menu + '"><p>' + menu.label + '</p></div>')
+            $(".clothing-menu-" + menu.menu + "-container").css({
+                "display": "block"
+            });
+            if (menu.label == "Clothing") {
+                $("#faceoption").css("display", "none");
+            } else {
+                $("#faceoption").css("display", "block");
+            }
+            selectedTab = "." + menu.menu + "Tab";
+            lastCategory = menu.menu;
+        } else {
+            $(".clothing-menu-header").append('<div class="clothing-menu-header-btn ' + menu.menu + 'Tab" data-category="' + menu.menu + '"><p>' + menu.label + '</p></div>')
+        }
+
+        if (menu.menu == "myOutfits") {
+            $.each(menu.outfits, function (index, outfit) {
+                var elem = '<div class="clothing-menu-option" data-myOutfit="' + (index + 1) + '"> <div class="clothing-menu-option-header"><p>' + outfit + '</p></div><div class="clothing-menu-myOutfit-option-button"><p>Select</p></div><div class="clothing-menu-myOutfit-option-button-remove"><p>Delete</p></div></div>'
+                $(".clothing-menu-myOutfits-container").append(elem)
+                $("[data-myOutfit='" + (index + 1) + "']").data('myOutfitData', index + 1)
+            });
+        }
+    });
+
+    var menuWidth = (100 / data.menus.length)
+    $(".clothing-menu-header-btn").css("width", menuWidth - 0.49 + "%");
+}
+
+Ak47Clothing.ReloadOutfits = function (outfits) {
+    $(".clothing-menu-myOutfits-container").html("");
+    $.each(outfits, function (index, outfit) {
+        var elem = '<div class="clothing-menu-option" data-myOutfit="' + (index + 1) + '"> <div class="clothing-menu-option-header"><p>' + outfit + '</p></div><div class="clothing-menu-myOutfit-option-button"><p>Select</p></div><div class="clothing-menu-myOutfit-option-button-remove"><p>Delete</p></div></div>'
+        $(".clothing-menu-myOutfits-container").append(elem)
+        $("[data-myOutfit='" + (index + 1) + "']").data('myOutfitData', index + 1)
+    });
+}
+
+$(document).on('click', '.clothing-menu-outfit-option-button', function (e) {
+    e.preventDefault();
+    var oData = $(this).parent().data('outfitData');
+    $.post('https://ak47_clothing/selectOutfit', JSON.stringify({
+        outfitData: oData.outfitData,
+        outfitName: oData.outfitLabel
+    }))
+});
+
+$(document).on('click', '.clothing-menu-myOutfit-option-button', function (e) {
+    e.preventDefault();
+    var outfitData = $(this).parent().data('myOutfitData');
+    $.post('https://ak47_clothing/selectOutfit', JSON.stringify({
+        id: outfitData,
+    }))
+});
+
+$(document).on('click', '.clothing-menu-myOutfit-option-button-remove', function (e) {
+    e.preventDefault();
+    var outfitData = $(this).parent().data('myOutfitData');
+    $.post('https://ak47_clothing/removeOutfit', JSON.stringify({
+        id: outfitData,
+    }));
+});
+
+Ak47Clothing.Close = function () {
+    $.post('https://ak47_clothing/close');
+    $(".change-camera-buttons").fadeOut(150);
+    $(".clothing-menu-myOutfits-container").css("display", "none");
+    $(".clothing-menu-character-container").css("display", "none");
+    $(".clothing-menu-clothing-container").css("display", "none");
+    $(".clothing-menu-accessoires-container").css("display", "none");
+    $(".clothing-menu-barber-container").css("display", "none");
+    $(".clothing-menu-header").html("");
+    $(selectedCam).removeClass('selected-cam');
+    $(selectedTab).removeClass("selected");
+    selectedCam = null;
+    selectedTab = null;
+    lastCategory = null;
+    $(".clothing-menu-container").css({
+        "display": "block"
+    }).animate({right: "-25vw"}, 200, function () {
+        $(".clothing-menu-container").css({
+            "display": "none"
+        });
+    });
+}
+
+$(document).on('click', '#save-outfit', function (e) {
+    e.preventDefault();
+    $(".clothing-menu-container").css({
+        "display": "block"
+    }).animate({right: "-25vw"}, 200, function () {
+        $(".clothing-menu-container").css({
+            "display": "none"
+        });
+    });
+    $(".clothing-menu-save-outfit-name").fadeIn(150);
+});
+
+$(document).on('click', '#save-outfit-save', function (e) {
+    e.preventDefault();
+    $(".clothing-menu-container").css({
+        "display": "block"
+    }).animate({right: 0}, 200);
+    $(".clothing-menu-save-outfit-name").fadeOut(150);
+    $.post('https://ak47_clothing/saveOutfit', JSON.stringify({
+        outfitName: $("#outfit-name").val()
+    }));
+});
+
+$(document).on('click', '#cancel-outfit-save', function (e) {
+    e.preventDefault();
+    $(".clothing-menu-container").css({
+        "display": "block"
+    }).animate({right: 0}, 200);
+    $(".clothing-menu-save-outfit-name").fadeOut(150);
+});
+
+$(document).on('click', '.change-camera-button', function (e) {
+    e.preventDefault();
+    var rotationType = $(this).data('rotation');
+    $.post('https://ak47_clothing/rotateCam', JSON.stringify({
+        type: rotationType
+    }))
+});
