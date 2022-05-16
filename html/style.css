@@ -19,13 +19,15 @@
     width: 40vh;
     background-color: rgb(23 23 23 / 80%);
     right: -25vw;
+	overflow: unset;
 }
 
 .clothing-menu-header {
     position: relative;
     height: 6vh;
     width: 100%;
-    top: .9vh;
+    top: -2.5vh;
+	z-index: 999;
 }
 
 .clothing-menu-header-btn {
@@ -40,6 +42,9 @@
     text-align: center;
     line-height: 3.5vh;
     transition: all 1s linear;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .clothing-menu-header-btn:hover {
@@ -61,24 +66,27 @@
 
 .clothing-menu-header-cameras {
     position: absolute;
-    height: 5.5vh;
-    width: 102%;
-    top: -2.3vh;
+    height: 9.5vh;
+    width: 24vh;
+    top: 0;
+    left: -7vh;
+    overflow: unset;
 }
 
 .clothing-menu-header-camera-btn {
-    border: 1px solid;
+    border: 3px solid;
     border-color: #00000021;
     background-color: #00a2a5;
     position: relative;
     height: 55%;
     top: 2.3vh;
     width: 24.05%;
-    float: left;
     color: #ededed;
     text-align: center;
-    line-height: 3.7vh;
+    line-height: 6vh;
     transition: all 1s linear;
+    border-radius: 1vh;
+    margin-bottom: 1.5vh;
 }
 
 .selected-cam {
@@ -91,7 +99,7 @@
 }
 
 .clothing-menu-header-camera-btn>i {
-    font-size: 1.4vh;
+    font-size: 2.4vh;
 }
 
 .clothing-menu-roomOutfits-container {
@@ -203,8 +211,8 @@
     margin: 0 auto;
     left: 0.3vh;
     right: 0;
-    top: 6.9vh;
-    height: 86vh;
+    top: 4vh;
+    height: 91vh;
     width: 92%;
     overflow-y: scroll !important;
 }
@@ -215,8 +223,8 @@
     margin: 0 auto;
     left: 0.3vh;
     right: 0;
-    top: 9vh;
-    height: 86vh;
+    top: 4vh;
+    height: 91vh;
     width: 92%;
     overflow-y: scroll !important;
 }
@@ -227,8 +235,8 @@
     margin: 0 auto;
     left: 0.3vh;
     right: 0;
-    top: 9vh;
-    height: 86vh;
+	top: 4vh;
+    height: 91vh;
     width: 92%;
     overflow-y: scroll !important;
 }
@@ -239,8 +247,8 @@
     margin: 0 auto;
     left: 0.3vh;
     right: 0;
-    top: 9vh;
-    height: 86vh;
+    top: 4vh;
+    height: 91vh;
     width: 92%;
     overflow-y: scroll !important;
 }
@@ -263,21 +271,26 @@
     position: initial;
     width: 100%;
     overflow: visible;
-    margin-top: -25px;
+	height: fit-content;
+    background: #404e678c;
+    border-radius: 2vh;
+	margin-bottom: 1vh;
 }
 
 .clothing-menu-option-header {
+	background: radial-gradient(#00b5b8, transparent);
     color: #ededed;
-    padding: 3.0vh 0.08vh 0.08vh 0.08vh;
+    padding: 1vh 0.08vh 1vh 0.08vh;
     width: 100%;
-    margin-bottom: -10px;
+	border-top-right-radius: 2vh;
+    border-top-left-radius: 2vh;
 }
 
 .clothing-menu-option-header>p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: 1.4vh;
+    font-size: 1.5vh;
     letter-spacing: 0.2vh;
 }
 
@@ -295,11 +308,13 @@
     float: left;
     height: 70px;
     width: 40%;
-    margin-left: 11.4vh;
+    margin-left: 10.8vh;
 }
 
 .clothing-menu-option-item-left {
     border: 1px;
+	border-color: #00000021;
+    border-style: solid;
     border-radius: 10px 0px 0px 10px;
     position: absolute;
     bottom: 0;
@@ -320,6 +335,8 @@
 
 .clothing-menu-option-item-right {
     border: 1px;
+	border-color: #00000021;
+    border-style: solid;
     border-radius: 0px 10px 10px 0px;
     position: absolute;
     bottom: 0;
@@ -341,20 +358,25 @@
 .item-number {
     background-color: #00000075;
     position: absolute;
-    width: 32%;
+    width: 29%;
     height: 50%;
-    top: 3.24vh;
-    left: 4.7vh;
+    bottom: 0;
+    left: 4.9vh;
     border: none;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1vh;
-    letter-spacing: 0.1vh;
+    font-size: 1.2vh;
+    letter-spacing: 0.05vh;
     color: white;
     outline: none;
     transition: all 0.1s linear;
+}
+.left-right-icon-size {
+	font-size: 3vh;
+    line-height: 3vh;
+    vertical-align: -1.4vh;
 }
 
 .clothing-menu-option-item-header {
@@ -608,4 +630,164 @@
     color: #ededed;
     bottom: 0px;
     right: 0px;
+}
+
+/* all box sizes */
+.clothing-menu-option.r0-box {
+	height: 14vh;
+}
+.clothing-menu-option.r1-box {
+	height: 18vh;
+}
+.clothing-menu-option.r2-box {
+    height: 29vh;
+}
+.clothing-menu-option.r3-box {
+    height: 40vh;
+}
+.clothing-menu-option.r4-box {
+    height: 51vh;
+}
+
+/* (1280x720) for 720p HD Display */
+@media (min-width: 1280px) and (max-width: 1599px) {
+    /* insert styles here */
+	.clothing-menu-option.r0-box .clothing-menu-option-item-left, 
+    .clothing-menu-option.r0-box .clothing-menu-option-item-right, 
+    .clothing-menu-option.r0-box .item-number 
+    {
+		bottom: 2vh;
+	}
+
+    .clothing-menu-option-item-left,
+    .clothing-menu-option-item-right
+    {
+        bottom: 2.5vh;
+        height: 43%;
+        line-height: 3.1vh;
+    }
+
+    .item-number {
+        width: 29%;
+        height: 44.4%;
+        bottom: 2.42vh;
+    }
+}
+
+/* (1600x900) for 900p HD Display */
+@media (min-width: 1600px) and (max-width: 1919px) {
+    /* insert styles here */
+	.clothing-menu-option.r0-box .clothing-menu-option-item-left, .clothing-menu-option.r0-box .clothing-menu-option-item-right, .clothing-menu-option.r0-box .item-number {
+		bottom: 2vh;
+	}
+	/* all box sizes */
+	.clothing-menu-option.r0-box {
+		height: 11vh;
+	}
+	.clothing-menu-option.r1-box {
+		height: 16vh;
+	}
+	.clothing-menu-option.r2-box {
+		height: 25vh;
+	}
+	.clothing-menu-option.r3-box {
+		height: 35vh;
+	}
+	.clothing-menu-option.r4-box {
+		height: 45vh;
+	}
+}
+
+/* (1920x1080) for 1080p Full HD / FHD Display */
+@media (min-width: 1920px) and (max-width: 2559px)  {
+	.clothing-menu-option.r0-box .clothing-menu-option-item-left, .clothing-menu-option.r0-box .clothing-menu-option-item-right, .clothing-menu-option.r0-box .item-number {
+		bottom: 1vh;
+	}
+
+    /* all box sizes */
+	.clothing-menu-option.r0-box {
+		height: 11vh;
+	}
+	.clothing-menu-option.r1-box {
+        height: 15vh;
+    }
+    .clothing-menu-option.r2-box {
+        height: 24vh;
+    }
+    .clothing-menu-option.r3-box {
+        height: 32vh;
+    }
+    .clothing-menu-option.r4-box {
+        height: 40vh;
+    }
+	.clothing-menu-option-header {
+		padding: 0.8vh 0.08vh 0.8vh 0.08vh;
+	}
+	.clothing-menu-header-camera-btn {
+		height: 47%;
+        line-height: 5.5vh;
+        width: 18%;
+	}
+	.left-right-icon-size {
+		font-size: 2vh;
+		line-height: 2vh;
+		vertical-align: -0.6vh;
+	}
+	.clothing-menu-header-cameras {
+		left: -5.8vh;
+	}
+	.clothing-menu-header-camera-btn>i {
+		font-size: 2vh;
+	}
+}
+
+/* (2560x1440) for 1440p / QHD / QuadHD / WQHD Display */
+@media (min-width: 2560px) and (max-width: 4095px) {
+	.clothing-menu-option.r0-box .clothing-menu-option-item-left,
+    .clothing-menu-option.r0-box .clothing-menu-option-item-right, 
+    .clothing-menu-option.r0-box .item-number {
+		bottom: 1vh;
+	}
+
+    /* all box sizes */
+	.clothing-menu-option.r0-box {
+		height: 9vh;
+	}
+	.clothing-menu-option.r1-box {
+        height: 12vh;
+    }
+    .clothing-menu-option.r2-box {
+        height: 19vh;
+    }
+    .clothing-menu-option.r3-box {
+        height: 26vh;
+    }
+    .clothing-menu-option.r4-box {
+        height: 32.5vh;
+    }
+	.clothing-menu-option-header {
+		padding: 0.8vh 0.08vh 0.8vh 0.08vh;
+	}
+	.clothing-menu-header-camera-btn {
+		height: 55%;
+		line-height: 6.5vh;
+		width: 22%;
+	}
+	.left-right-icon-size {
+		font-size: 2vh;
+		line-height: 2vh;
+		vertical-align: -.25vh;
+	}
+	.clothing-menu-header-cameras {
+		left: -6.8vh;
+	}
+	.clothing-menu-header-camera-btn>i {
+		font-size: 2vh;
+	}
+
+}
+
+/* (4096 x 2160) For 4K Displays*/
+@media (min-width: 4096px) and (max-width: 2560px) {
+	/* insert styles here */
 }
